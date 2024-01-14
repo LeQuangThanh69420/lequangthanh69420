@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family: "Poppins";*/
+}
+
+body {
+    background-color: black;
+}
+
+.bg > video {
+    position: fixed;
+    z-index: -999;
+    width: 112%;
+    top: -6%;
+    left: -6%;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background: linear-gradient(125deg,#3eafff 45%, #ff35b8 55%);
+    display: flex;
+    justify-content: center;
+    padding: 0.5% 10%;
+}
+
+.main {
+    position: absolute;
+    top: 10%;
+    left: 17%;
+    width: 66%;
+    height: 85%;
+    background: linear-gradient(90deg, #9faeff90 25% , #ff9fc890 75% );
+    border-radius: 40px;
+    padding: 2%;
+    display: flex;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+}
+
+.avatar {
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 75%;
+}
+
+.content {
+    width: 80%;
+}
+
+.nav-item {
+    position: relative;
+    color: white;
+    text-align: right;
+    list-style: none;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #3eafff); /*linear-gradient(direction, color-stop1, color-stop2, ...);*/
+    transition: width 0.5s ease; /*transition: property duration timing-function delay;*/
+    z-index: -1;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.nav-selected {
+    background: linear-gradient(90deg, transparent, #3eafff);
+}
