@@ -8,4 +8,5 @@ document.addEventListener("DOMContentLoaded", function () {
             item.classList.add("nav-selected");
         });
     });
+
 });

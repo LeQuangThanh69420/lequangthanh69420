@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /*font-family: "Poppins";*/
+    font-family: "Poppins";
 }
 
 body {
@@ -25,7 +29,6 @@ body {
     height: 8%;
     background: linear-gradient(125deg,#3eafff 45%, #ff35b8 55%);
     display: flex;
-    justify-content: center;
     padding: 0.5% 10%;
 }
 
@@ -36,28 +39,32 @@ body {
     width: 66%;
     height: 85%;
     background: linear-gradient(90deg, #9faeff90 25% , #ff9fc890 75% );
-    border-radius: 40px;
-    padding: 2%;
+    border-radius: 5%;
+    padding: 0.5%;
     display: flex;
 }
 
 .menu {
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 
 .avatar {
     overflow: hidden;
     width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-img {
+    width: 80%;
+    border-radius: 10%;
 }
 
 .nav-bar {
     width: 100%;
-    height: 75%;
-}
-
-.content {
-    width: 80%;
+    height: 60%;
 }
 
 .nav-item {
@@ -84,4 +91,10 @@ body {
 
 .nav-selected {
     background: linear-gradient(90deg, transparent, #3eafff);
+}
+
+.content {
+    width: 75%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
 }
